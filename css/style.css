@@ -493,6 +493,12 @@ footer ul li a:hover {
   .testimonial__body {
     padding: 1.2rem;
   }
+
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 /* ============TAB BORDER============== */
 .tab-border {
