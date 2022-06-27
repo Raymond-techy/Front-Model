@@ -7,7 +7,24 @@
   grid-template-columns: 40% 60%;
   gap: 2rem;
 }
-
+.tab {
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+  background: var(--color-white);
+}
+.tab h3 {
+  color: var(--color-bg2);
+  margin-left: 0.8rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
 .about__achievements-right > p {
   margin: 1.6rem 0 2.5rem;
 }
@@ -94,6 +111,32 @@
 .team__member-socials a {
   padding: 1rem;
 }
+/* ===================OUR FEATURED RESULTS================= */
+.results {
+  margin-top: 10rem;
+}
+.results__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.result {
+  background: var(--color-bg1);
+  text-align: center;
+  border: 1px solid transparent;
+}
+.result:hover {
+  background: transparent;
+  border-color: var(--transition);
+}
+.result__info {
+  text-align: left;
+  padding: 2rem;
+}
+.result__info ul {
+  margin: 1.2rem 0 2rem;
+  font-size: 0.9rem;
+}
 
 /* ======media query ======== */
 @media screen and (max-width: 1024px) {
@@ -115,6 +158,15 @@
   .team__member {
     padding: 1rem;
   }
+  .results {
+    margin-top: 0;
+  }
+  .results__container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .tab {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -135,5 +187,11 @@
   .team__member-info {
     text-align: center;
     padding-bottom: 0.5rem;
+  }
+  .results__container {
+    grid-template-columns: 1fr;
+  }
+  .tab {
+    width: 95%;
   }
 }

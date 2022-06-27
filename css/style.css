@@ -467,8 +467,12 @@ footer ul li a:hover {
     text-align: center;
     margin-top: 0;
   }
+
   .header__left p {
     margin-bottom: 1.3rem;
+  }
+  .header__left p span {
+    display: none;
   }
   /* catgories */
   .categories__right {
@@ -489,4 +493,17 @@ footer ul li a:hover {
   .testimonial__body {
     padding: 1.2rem;
   }
+}
+/* ============TAB BORDER============== */
+.tab-border {
+  border-bottom: 2px solid var(--color-warning);
+  border-radius: 5px;
+}
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+  display: none;
+}
+.show {
+  display: grid !important;
 }
