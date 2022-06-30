@@ -14,17 +14,26 @@
   margin-bottom: 10px;
   text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 10px;
   border-radius: 5px;
   background: var(--color-white);
 }
+
 .tab h3 {
   color: var(--color-bg2);
   margin-left: 0.8rem;
   font-size: 1.2rem;
   cursor: pointer;
 }
+
+.tab h3:hover {
+  color: white;
+  background-color: var(--color-bg2);
+  padding: 12px;
+  border-radius: 5px;
+}
+
 .about__achievements-right > p {
   margin: 1.6rem 0 2.5rem;
 }
@@ -39,6 +48,8 @@
   border-radius: 1rem;
   text-align: center;
   transition: var(--transition);
+  flex: 1;
+  margin-right: 5px;
 }
 .achievement__card:hover {
   background-color: var(--color-bg2);
